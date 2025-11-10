@@ -9,7 +9,7 @@ file layout, and method responsibilities so new teammates can implement features
 - `docs/` has your **architecture**, **task breakdown**, and **Git/GitHub workflow**
 
 ## How to use this
-1. Open in your editor (Gothic, VS Code, etc.).
+1. Open in your editor ( VS Code, etc.).
 2. Read `docs/ARCHITECTURE.md` then `docs/TASKS.md`.
 3. Each teammate picks a task. Implement the TODOs in the corresponding stub files.
 4. Commit early and often. Open small PRs.
