@@ -1,4 +1,4 @@
-
+// Sage Woods
 namespace BlackjackGame.Core
 {
     /// <summary>Immutable representation of a card.</summary>
