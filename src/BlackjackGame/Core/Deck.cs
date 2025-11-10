@@ -1,4 +1,5 @@
 // hi 
+// all
 // hello
 namespace BlackjackGame.Core
 {
