@@ -3,6 +3,16 @@ using System;
 namespace BlackjackGame.Game
 {
     /// <summary>
+    /// Indicates the result of a single round for a player.
+    /// </summary>
+    public enum RoundOutcome
+    {
+        Win,
+        Loss,
+        Push
+    }
+
+    /// <summary>
     /// Central place for tweakable scoring and options.
     /// </summary>
     public static class GameRules
@@ -80,6 +90,34 @@ namespace BlackjackGame.Game
         public static void ShowPushMessage()
         {
             Console.WriteLine("Push! It's a tie.");
+        }
+
+        /// <summary>
+        /// Determines the outcome of a round given player and dealer totals.
+        /// </summary>
+        public static RoundOutcome DetermineOutcome(int playerValue, int dealerValue)
+        {
+            // Both bust -> treat as push
+            if (playerValue > 21 && dealerValue > 21)
+                return RoundOutcome.Push;
+
+            // Player busts only
+            if (playerValue > 21)
+                return RoundOutcome.Loss;
+
+            // Dealer busts only
+            if (dealerValue > 21)
+                return RoundOutcome.Win;
+
+            // Neither busts: compare values
+            if (playerValue > dealerValue)
+                return RoundOutcome.Win;
+
+            if (playerValue < dealerValue)
+                return RoundOutcome.Loss;
+
+            // Same value
+            return RoundOutcome.Push;
         }
     }
 }
