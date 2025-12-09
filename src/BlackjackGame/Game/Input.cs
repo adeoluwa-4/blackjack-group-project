@@ -57,7 +57,7 @@ namespace BlackjackGame.Game
             while (true)
             {
                 Console.Write(prompt + " (y/n): ");
-                string input = Console.ReadLine()?.Trim().ToLower();
+                string? input = Console.ReadLine()?.Trim().ToLower();
 
                 if (input == "y" || input == "yes")
                     return true;
