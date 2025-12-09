@@ -5,7 +5,7 @@ using System.Text.Json;
 namespace BlackjackGame.Services
 {
     /// <summary>
-    /// Represents a high score entry (name + points).
+    /// Represents a high  score entry (name + points).
     /// </summary>
     public class HighScoreEntry
     {
