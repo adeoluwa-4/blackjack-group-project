@@ -13,7 +13,7 @@ namespace BlackjackGame.Models
         public int Wins { get; set; }
 
         /// <summary>
-        /// Total number of rounds lost.
+        /// Total number of  rounds lost.
         /// </summary>
         public int Losses { get; set; }
 
