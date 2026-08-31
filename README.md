@@ -1,5 +1,9 @@
 # Blackjack Points Game
 
-This is a C# console version of Blackjack where players draw cards, try to reach 21, and earn points based on the result. The code is split into clear parts for cards, hands, game rules, player input, game sessions, and saved high scores.
+## What it does
 
-My team used this project to practice planning software before building it. The repository includes the game structure, written method plans, team tasks, and a clear workflow for adding features.
+This C# console game lets players draw cards, try to reach 21, and earn points. It includes cards, hands, game rules, player controls, game sessions, and high scores.
+
+## What I built
+
+My team planned the game structure and built the main parts for a Kansas State University software project. Run it from `src/BlackjackGame` with `dotnet run`.
